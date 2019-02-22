@@ -1,0 +1,8 @@
+<div class="card-container">
+    <a *ngFor="let team of teams.teams" class="docs-card">
+        <section>{{team.strTeam}}</section>
+        <p><img [height]="50" [src]="team.strTeamBadge" [width]="50" alt="{{team.strTeam}}"></p>
+        <p class="card-footer">{{team.strStadium}}</p>
+    </a>
+</div>
+
