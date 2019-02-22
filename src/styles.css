@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+}
+
+.basic-container {
+    padding: 30px;
+}
+
+.version-info {
+    font-size: 8pt;
+    float: right;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.docs-card {
+    height: 194px;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(10, 16, 20, .24), 0 0 2px rgba(10, 16, 20, .12);
+    box-sizing: border-box;
+    transition: box-shadow .5s;
+    max-width: 340px;
+    min-width: 262px;
+    margin: 24px 8px;
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.card-footer {
+    line-height: 32px;
+    padding: 8px 16px;
+    background-color: rgba(25, 118, 210, .1);
+    color: #1976d2;
+}
+
+.docs-card section {
+    color: #333;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    padding: 32px 0 24px;
+    text-transform: none;
+    text-align: center;
+}
+
+.docs-card p {
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0 16px;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.docs-card .card-footer {
+    bottom: 0;
+    border-top: .5px solid #dbdbdb;
+    box-sizing: border-box;
+    line-height: 48px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    color: #6e6e6e;
+}
+
+.docs-card:hover section {
+    color: #1976d2;
+    cursor: pointer;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
